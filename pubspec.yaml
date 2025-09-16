@@ -1,0 +1,65 @@
+name: printeasy_admin
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  cloud_firestore: ^5.6.6
+  csv: ^6.0.0
+  firebase_auth: ^5.5.2
+  firebase_core: ^3.13.0
+  firebase_storage: ^12.4.5
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^5.2.1
+  flutter_secure_storage: ^9.2.4
+  flutter_typeahead: ^5.2.0
+  flutter_web_plugins:
+    sdk: flutter
+  get: ^4.7.2
+  hive_flutter: ^1.1.0
+  http: ^1.3.0
+  pdf: ^3.11.3
+  printeasy_utils:
+    git:
+      url: https://github.com/PrintEasy/PrintEasyUtils.git
+      ref: main
+      version: 0.0.1
+  printing: ^5.14.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.3
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.1
+  flutter_test:
+    sdk: flutter
+  uuid: ^4.5.1
+
+
+flutter_launcher_icons:
+  android: false
+  ios: false
+  web:
+    generate: true
+    image_path: "assets/logo/icon.webp"
+    background_color: "#FFFFFF"
+    theme_color: "#EB7323"
+
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logo/logo.png
+  android: false
+  ios: false
+  web: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/

@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "site": "printeasy-admin",
+    "public": "build/web",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "printeasy-68c61",
+          "configurations": {
+            "web": "1:206371703496:web:6bb3dfab57eba2c605b3fd"
+          }
+        }
+      }
+    }
+  }
+}
